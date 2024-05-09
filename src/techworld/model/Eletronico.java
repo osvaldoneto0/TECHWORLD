@@ -1,14 +1,17 @@
 package techworld.model;
 
 public abstract class Eletronico {
-   
+    private int id;
 	private String modelo;
 	private String marca;
 	private float valor;
 	private String cor;
 	private int tipo;
 
-	 public Eletronico(String modelo, String marca, float valor, String cor, int tipo) {
+
+
+	public Eletronico(int id, String modelo, String marca, float valor, String cor, int tipo) {
+		this.id = id;
 		this.modelo = modelo;
 		this.marca = marca;
 		this.valor = valor;
@@ -16,10 +19,23 @@ public abstract class Eletronico {
 		this.tipo = tipo;
 	}
 
+
+
+	public int getId() {
+		return id;
+	}
+
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+
 	public String getModelo() {
 		return modelo;
 	}
-
 
 
 
@@ -29,11 +45,9 @@ public abstract class Eletronico {
 
 
 
-
 	public String getMarca() {
 		return marca;
 	}
-
 
 
 
@@ -43,11 +57,9 @@ public abstract class Eletronico {
 
 
 
-
 	public float getValor() {
 		return valor;
 	}
-
 
 
 
@@ -57,11 +69,9 @@ public abstract class Eletronico {
 
 
 
-
 	public String getCor() {
 		return cor;
 	}
-
 
 
 
@@ -71,18 +81,15 @@ public abstract class Eletronico {
 
 
 
-
 	public int getTipo() {
 		return tipo;
 	}
 
 
 
-
 	public void setTipo(int tipo) {
 		this.tipo = tipo;
 	}
-
 
 
 

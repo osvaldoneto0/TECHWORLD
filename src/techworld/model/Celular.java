@@ -4,8 +4,8 @@ public class Celular extends Eletronico {
 	
 	private int entradaDeChip;
 
-	public Celular(String modelo, String marca, float valor, String cor, int tipo,int entradaDeChip) {
-		super(modelo, marca, valor, cor, tipo);
+	public Celular(int id,String modelo, String marca, float valor, String cor, int tipo,int entradaDeChip) {
+		super(entradaDeChip, modelo, marca, valor, cor, tipo);
 		this.entradaDeChip = entradaDeChip;
 	}
 

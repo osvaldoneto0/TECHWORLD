@@ -4,8 +4,8 @@ public class Notebook extends Eletronico {
 	
 	private String modeloDoTeclado;
 
-	public Notebook(String modelo, String marca, float valor, String cor, int tipo,String modeloDoTeclado) {
-		super(modelo, marca, valor, cor, tipo);
+	public Notebook( int id,String modelo, String marca, float valor, String cor, int tipo,String modeloDoTeclado) {
+		super(tipo, modelo, marca, valor, cor, tipo);
 		this.modeloDoTeclado = modeloDoTeclado;
 			}
 

@@ -4,7 +4,9 @@ import techworld.model.Eletronico;
 public interface TechWorldRepository {
 	
 	
-	public void listarTodas();
+	
 	public void cadastrar (Eletronico eletronico);
-	public void remover (Eletronico eletronico);
+	public void remover (int id);
+	public void atualizar (Eletronico eletronico);
+	public void listarTodos();
 }
